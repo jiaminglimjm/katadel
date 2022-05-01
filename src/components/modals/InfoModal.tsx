@@ -14,7 +14,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
     <br/><hr/>
     <div className="contohbox">
-      <p className="text-right">
+      <p className="text-right text-gray-700 dark:text-gray-300">
         چونتوه:
       </p>
       <div className="flex justify-center mb-1 mt-4">
@@ -46,7 +46,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell value="ق" />
       </div>
       <p className="text-sm text-gray-700 dark:text-gray-300">
-        حروف <b>'س'</b> ترداڤت دالم جواڤن⹁ تتاڤي بوکن دکدودوقن يڠ بتول.
+        حروف <b>'س'</b> ترداڤت دالم جواڤن⹁ تاڤي بوکن دکدودوقن يڠ بتول.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
