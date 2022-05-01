@@ -172,10 +172,10 @@ function App() {
   }, [isGameWon, isGameLost, showSuccessAlert])
 
   const onChar = (value: string) => {
-    if (value == 'ء') {value = 'ٴ'}
+    if (value === 'ء') {value = 'ٴ'}
     if (
-        value == 'ا' &&
-        currentGuess.substr(currentGuess.length-1)=='ل')
+        value === 'ا' &&
+        currentGuess.substr(currentGuess.length-1)==='ل')
     {
         setCurrentGuess(`${currentGuess.substr(0,currentGuess.length-1)}ﻻ`);
     }
