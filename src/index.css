@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: DejawiVu Sans Mono;
+  src: url(DejawiVuSansMono-v1.0.ttf) format("truetype");
+}
+
 :root {
   --animation-speed: 1000ms;
   --animation-speed-fast: 250ms;
@@ -11,6 +16,7 @@
   --absent-cell-bg-color: theme('colors.slate.400');
   --correct-cell-bg-color: theme('colors.green.400');
   --present-cell-bg-color: theme('colors.yellow.400');
+  font-family: DejawiVu Sans Mono;
 }
 
 .dark {
@@ -188,4 +194,14 @@ svg.cursor-pointer:hover {
   100% {
     transform: translate(0, 0);
   }
+}
+
+.flip {
+  transform: scale(-1, 1);
+  transform-origin: center;
+}
+
+.contohbox {
+  border-top: 1px;
+  border-bottom: 1px;
 }

@@ -35,7 +35,7 @@ export const Alert = ({
       leaveTo="opacity-0"
     >
       <div className={classes}>
-        <div className="p-2">
+        <div className="p-2" dir="rtl">
           <p className="text-sm text-center font-medium">{message}</p>
         </div>
       </div>

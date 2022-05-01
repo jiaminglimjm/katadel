@@ -1,7 +1,7 @@
 import {
   ChartBarIcon,
   CogIcon,
-  InformationCircleIcon,
+  QuestionMarkCircleIcon,
 } from '@heroicons/react/outline'
 import { GAME_TITLE } from '../../constants/strings'
 
@@ -19,8 +19,8 @@ export const Navbar = ({
   return (
     <div className="navbar">
       <div className="navbar-content px-5">
-        <InformationCircleIcon
-          className="h-6 w-6 mr-2 cursor-pointer dark:stroke-white"
+        <QuestionMarkCircleIcon
+          className="h-6 w-6 mr-2 cursor-pointer flip dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
         />
         <p className="text-xl ml-2.5 font-bold dark:text-white">{GAME_TITLE}</p>
@@ -30,7 +30,7 @@ export const Navbar = ({
             onClick={() => setIsStatsModalOpen(true)}
           />
           <CogIcon
-            className="h-6 w-6 cursor-pointer dark:stroke-white"
+            className="h-6 w-6 mr-3 cursor-pointer dark:stroke-white"
             onClick={() => setIsSettingsModalOpen(true)}
           />
         </div>

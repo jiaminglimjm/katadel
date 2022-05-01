@@ -24,7 +24,7 @@ export const Histogram = ({
   const maxValue = Math.max(...winDistribution, 1)
 
   return (
-    <div className="columns-1 justify-left m-2 text-sm dark:text-white">
+    <div className="columns-1 justify-right m-2 text-sm dark:text-white">
       {winDistribution.map((value, i) => (
         <Progress
           key={i}

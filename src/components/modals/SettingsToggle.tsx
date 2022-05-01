@@ -22,14 +22,14 @@ export const SettingsToggle = ({
   const toggleButton = classnames(
     'bg-white w-6 h-6 rounded-full shadow-md transform duration-300 ease-in-out cursor-pointer',
     {
-      'translate-x-6': flag,
+      '-translate-x-6': flag,
     }
   )
 
   return (
     <>
       <div className="flex justify-between gap-4 py-3">
-        <div className="text-gray-500 dark:text-gray-300 mt-2 text-left">
+        <div className="text-gray-500 dark:text-gray-300 mt-2 text-right">
           <p className="leading-none">{settingName}</p>
           {description && (
             <p className="text-xs mt-1 text-gray-500 dark:text-gray-300">

@@ -8,64 +8,66 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+    <BaseModal title="چارا برماٴين" isOpen={isOpen} handleClose={handleClose}>
+      <p className="text-gray-500 dark:text-gray-300">
+        تکا ڤرکاتاٴنڽ دالم 7 چوباٴن!
       </p>
-
+    <br/><hr/>
+    <div className="contohbox">
+      <p className="text-right">
+        چونتوه:
+      </p>
       <div className="flex justify-center mb-1 mt-4">
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="W"
+          value="ک‍"
           status="correct"
         />
-        <Cell value="E" />
-        <Cell value="A" />
-        <Cell value="R" />
-        <Cell value="Y" />
+        <Cell value="‍ݢ‍" />
+        <Cell value="‍ل‍" />
+        <Cell value="‍ڤ‍" />
+        <Cell value="‍ن" />
       </div>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
+      <p className="text-gray-700 dark:text-gray-300">
+        حروف <b>'ک'</b> براد ڤد کدودوقن يڠ تڤت.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
+        <Cell value="ا" />
+        <Cell value="ي‍" />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="L"
+          value="‍س‍"
           status="present"
         />
-        <Cell value="O" />
-        <Cell value="T" />
+        <Cell value="‍و" />
+        <Cell value="ق" />
       </div>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
+      <p className="text-sm text-gray-700 dark:text-gray-300">
+        حروف <b>'س'</b> ترداڤت دالم جواڤن⹁ تتاڤي بوکن دکدودوقن يڠ بتول.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
-        <Cell value="A" />
-        <Cell value="G" />
-        <Cell isRevealing={true} isCompleted={true} value="U" status="absent" />
-        <Cell value="E" />
+        <Cell value="ت‍" />
+        <Cell value="‍ر" />
+        <Cell value="ج‍" />
+        <Cell isRevealing={true} isCompleted={true} value="‍م‍" status="absent" />
+        <Cell value="‍ه" />
       </div>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+      <p className="text-gray-700 dark:text-gray-300">
+        حروف <b>'م'</b> تياد دالم جواڤن.
       </p>
-
-      <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
-        love -{' '}
+    </div>
+      <br/><hr/>
+      <p className="mt-6 italic text-sm text-gray-700 dark:text-gray-300">
+        ڤرماٴينن تکا-تکي کات اين اياله سبواه ڤروجيک سومبر تربوک! ليهتله کود سومبرڽ{' '}
         <a
-          href="https://github.com/cwackerfuss/react-wordle"
+          href="https://github.com/jiaminglimjm/katadel"
           className="underline font-bold"
-        >
-          check out the code here
-        </a>{' '}
+        >دسيني
+        </a>!
       </p>
     </BaseModal>
   )

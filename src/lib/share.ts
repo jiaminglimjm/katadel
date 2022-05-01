@@ -9,6 +9,10 @@ const parser = new UAParser()
 const browser = parser.getBrowser()
 const device = parser.getDevice()
 
+const today = new Date()
+today.setHours(0, 0, 0, 0)
+const bulan = ["جانواري", "فيبرواري", "مچ", "اڤريل", "مي", "جون", "جولاي", "اوݢوس", "اوکتوبر", "نوۏيمبر", "ديسيمبر"]
+
 export const shareStatus = (
   solution: string,
   guesses: string[],
@@ -19,9 +23,9 @@ export const shareStatus = (
   handleShareToClipboard: () => void
 ) => {
   const textToShare =
-    `${GAME_TITLE} ${solutionIndex} ${
+    `${GAME_TITLE} (${today.getDate()} ${bulan[today.getMonth()]} ${today.getFullYear()}): ${
       lost ? 'X' : guesses.length
-    }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
+    } ڤر ${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
     generateEmojiGrid(
       solution,
       guesses,
@@ -52,7 +56,7 @@ export const generateEmojiGrid = (
   guesses: string[],
   tiles: string[]
 ) => {
-  return guesses
+  return "\u202E" + guesses
     .map((guess) => {
       const status = getGuessStatuses(solution, guess)
       const splitGuess = unicodeSplit(guess)
@@ -70,7 +74,7 @@ export const generateEmojiGrid = (
         })
         .join('')
     })
-    .join('\n')
+    .join('\u202C\n\u202E')
 }
 
 const attemptShare = (shareData: object) => {

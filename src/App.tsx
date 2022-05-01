@@ -172,7 +172,14 @@ function App() {
   }, [isGameWon, isGameLost, showSuccessAlert])
 
   const onChar = (value: string) => {
+    if (value == 'ء') {value = 'ٴ'}
     if (
+        value == 'ا' &&
+        currentGuess.substr(currentGuess.length-1)=='ل')
+    {
+        setCurrentGuess(`${currentGuess.substr(0,currentGuess.length-1)}ﻻ`);
+    }
+    else if (
       unicodeLength(`${currentGuess}${value}`) <= solution.length &&
       guesses.length < MAX_CHALLENGES &&
       !isGameWon

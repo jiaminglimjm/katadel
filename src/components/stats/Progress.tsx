@@ -19,7 +19,7 @@ export const Progress = ({
   )
   return (
     <div className="flex justify-left m-1">
-      <div className="items-center justify-center w-2">{index + 1}</div>
+      <div className="items-center justify-center w-2 ml-2">{index + 1}</div>
       <div className="w-full ml-2">
         <div style={{ width: `${8 + size}%` }} className={currentRowClass}>
           {label}
