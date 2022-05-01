@@ -25,6 +25,10 @@
     }
 }
 
+.MACONLY {
+    font-family: monospace, Times New Roman, Arial;
+}
+
 .dark {
   --default-cell-bg-color: theme('colors.slate.900');
   --default-cell-border-color: theme('colors.white');

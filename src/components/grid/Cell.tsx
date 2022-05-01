@@ -43,12 +43,21 @@ export const Cell = ({
       'cell-reveal': shouldReveal,
     }
   )
-
-  return (
-    <div className={classes} style={{ animationDelay }}>
-      <div className="letter-container" style={{ animationDelay }}>
-        {value}
-      </div>
-    </div>
-  )
+  if (navigator.platform.match('Mac') !== null) {
+      return (
+        <div className={classes} style={{ animationDelay }}>
+          <div className="letter-container" style={{ animationDelay }}>
+            {value}
+          </div>
+        </div>
+      )
+  } else {
+    return (
+        <div className={classes} style={{ animationDelay }}>
+          <div className="letter-container MACONLY" style={{ animationDelay }}>
+            {value}
+          </div>
+        </div>
+      )
+  }
 }
