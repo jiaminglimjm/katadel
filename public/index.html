@@ -3,10 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="%REACT_APP_GAME_DESCRIPTION%" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta property="og:description" content="%REACT_APP_GAME_DESCRIPTION%"/>
+    <meta property="og:locale" content="ms-Arab"/>
+
+    <meta property="og:image" content="lakaran-katadel.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="640" />
+    <meta property="og:image:alt" content="Katadel, the puzzle game banner. Four Jawi words in a grid: lautan, esok, sabun and sarung." />
+
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="کاتادل – Katadel" />
+    <meta property="twitter:description" content="Jom main permainan teka-teki Katadel dalam tulisan Jawi! Katadel adalah sebuah klon Wordle yang mengeluarkan perkataan baharu setiap hari!"/>
+    <meta name="twitter:creator" content="@__jiaming__">
+    <meta name="twitter:site" content="@__jiaming__">
+    <meta property="twitter:image" content="lakaran-katadel.png" />
+    <meta property="twitter:image:alt" content="Katadel, the puzzle game banner. Four Jawi words in a grid: lautan, esok, sabun and sarung." />
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -40,8 +57,9 @@
     <% } %>
   </head>
   <body dir=rtl>
-    <noscript>اندا هاروس مڠکتيفکن <b>جاۏاسکريڤ‌ت</b> اونتوق مماءينکن اڤليکاسي اين.<br/>Anda harus mengaktifkan <b>Javascript</b> untuk memainkan aplikasi ini.</noscript>
-    <h2 lang="ms" style="display:none">Katadel – permainan teka-teki kata versi Jawi mirip Wordle game! Teka perkataan rahsia dalam 7 cubaan!</h2>
+    <noscript>اندا هاروس مڠکتيفکن <em>جاۏاسکريڤ‌ت</em> اونتوق مماءينکن اڤليکاسي اين.<br/>Anda harus mengaktifkan <em>Javascript</em> untuk memainkan aplikasi ini.</noscript>
+    <h2 lang="ms" style="display:none">Jom main permainan teka-teki Katadel dalam tulisan Jawi! Katadel adalah sebuah klon Wordle yang mengeluarkan perkataan baharu setiap hari!</h2>
+    <h2 lang="en" style="display:none">Katadel – A Wordle clone translated into Jawi Malay script, with Arabic text reshaping!</h2>
     <div id="root"></div>
     <!--
       This HTML file is a template.
