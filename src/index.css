@@ -211,6 +211,11 @@ svg.cursor-pointer:hover {
   transform-origin: center;
 }
 
+.flip:hover {
+  transform: scale(-1.2, 1.2);
+  transform-origin: center;
+}
+
 .contohbox {
   border-top: 1px;
   border-bottom: 1px;
