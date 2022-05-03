@@ -20,7 +20,7 @@ export const Navbar = ({
     <div className="navbar">
       <div className="navbar-content px-5">
         <QuestionMarkCircleIcon
-          className="h-6 w-6 mr-3 cursor-pointer flip dark:stroke-white"
+          className="h-6 w-6 mr-3 flip dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
         />
         <p className="text-xl ml-3 font-bold dark:text-white">{GAME_TITLE}</p>
