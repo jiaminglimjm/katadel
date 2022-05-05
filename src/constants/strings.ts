@@ -1,6 +1,6 @@
 export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
 
-export const WIN_MESSAGES = ['!تهنيئه']
+export const WIN_MESSAGES = ['\u202eتهنيئه!']
 export const GAME_COPIED_MESSAGE = 'هاسيل ڤرماٴينن دسالين کڤاڤن کليڤ'
 export const NOT_ENOUGH_LETTERS_MESSAGE = 'تق چوکوڤ حروفڽ...'
 export const WORD_NOT_FOUND_MESSAGE = 'ڤرکاتاٴن تيدق دتموکن'
