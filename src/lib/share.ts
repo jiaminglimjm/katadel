@@ -24,8 +24,8 @@ export const shareStatus = (
 ) => {
   const textToShare =
     `${GAME_TITLE} (${today.getDate()} ${bulan[today.getMonth()]} ${today.getFullYear()}): ${
-      lost ? 'X' : guesses.length
-    } ڤر ${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
+       lost ? 'ݢاݢل' : guesses.length.toString() + ' ڤر ' + MAX_CHALLENGES.toString()
+    } \n\n` +
     generateEmojiGrid(
       solution,
       guesses,

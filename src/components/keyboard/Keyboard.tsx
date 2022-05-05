@@ -21,7 +21,8 @@ export const Keyboard = ({
   guesses,
   isRevealing,
 }: Props) => {
-  const charStatuses = getStatuses(solution, guesses)
+  let charStatuses = getStatuses(solution, guesses)
+  charStatuses['ء']=charStatuses['ٴ'];
 
   const onClick = (value: string) => {
     if (value === 'ENTER') {
