@@ -25,7 +25,7 @@ export const shareStatus = (
   const textToShare =
     `${GAME_TITLE} (${today.getDate()} ${bulan[today.getMonth()]} ${today.getFullYear()}): ${
        lost ? 'ݢاݢل :(' : guesses.length.toString() + ' ڤر ' + MAX_CHALLENGES.toString()
-a    } \n\n` +
+    } \n\n` +
     generateEmojiGrid(
       solution,
       guesses,
