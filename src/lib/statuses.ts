@@ -44,7 +44,7 @@ export const getGuessStatuses = (
 
   // handle all correct cases first
   splitGuess.forEach((letter, i) => {
-    if (letter === splitSolution[i] || (letter==='ٴ'&&splitSolution[i]==='ء')) {
+    if (letter === splitSolution[i]) {
       statuses[i] = 'correct'
       solutionCharsTaken[i] = true
       return
