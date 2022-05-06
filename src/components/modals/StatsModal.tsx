@@ -95,6 +95,15 @@ export const StatsModal = ({
             {SHARE_TEXT}
           </button>
         </div>
+        <br/><hr/>
+        <div class="columns-1 justify-right m-2 text-sm text-gray-700 dark:text-gray-300">
+ڤاڤن ککونچي اندا ممڤوڽاٴي ستياڤ حروف جاوي؟
+            <a href="https://jiaminglimjm.github.io/Ujian-Menaip-Jawi/" className="underline font-bold italic">
+            چوبا ليهت سبراڤ چڤت اندا بوليه تاٴيڤ!
+            </a>
+        </div>
+
+</div>
       )}
     </BaseModal>
   )

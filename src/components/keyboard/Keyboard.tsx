@@ -23,6 +23,10 @@ export const Keyboard = ({
 }: Props) => {
   let charStatuses = getStatuses(solution, guesses)
   charStatuses['ء']=charStatuses['ٴ'];
+  if (charStatuses['ﻻ']==='correct' || charStatuses['ﻻ']==='present') {
+    charStatuses['ل'] = charStatuses['ﻻ'];
+    charStatuses['ا'] = charStatuses['ﻻ'];
+  }
 
   const onClick = (value: string) => {
     if (value === 'ENTER') {
