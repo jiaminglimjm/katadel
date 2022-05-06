@@ -102,8 +102,6 @@ export const StatsModal = ({
             چوبا ليهت سبراڤ چڤت اندا بوليه تاٴيڤ!
             </a>
         </div>
-
-</div>
       )}
     </BaseModal>
   )
