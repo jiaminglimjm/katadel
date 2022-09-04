@@ -11,7 +11,7 @@ const device = parser.getDevice()
 
 const today = new Date()
 today.setHours(0, 0, 0, 0)
-const bulan = ["جانواري", "فيبرواري", "مچ", "اڤريل", "مي", "جون", "جولاي", "اوݢوس", "اوکتوبر", "نوۏيمبر", "ديسيمبر"]
+const bulan = ["جانواري", "فيبرواري", "مچ", "اڤريل", "مي", "جون", "جولاي", "اوݢوس", "سيڤتيمبر", "اوکتوبر", "نوۏيمبر", "ديسيمبر"]
 
 export const shareStatus = (
   solution: string,
